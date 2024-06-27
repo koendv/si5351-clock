@@ -66,7 +66,9 @@ Also, depending upon frequency and circuit, consider adding a terminating resist
 
 ## Hardware
 
-The hardware is a MS5351M / SI5351 clock generator and a WCH CH552E controller. The hardware supports generating two single-ended clock outputs, or one differential clock output.
+The hardware is a MS5351M / SI5351 clock generator and a WCH CH552E controller.  The design is balanced: The two ic's have the same pin count; cost more or less the same.
+
+The hardware supports generating two single-ended clock outputs, or one differential clock output.
 
 Frequency source is a 26MHz 0.5ppm  Temperature Compensated Crystal Oscillator (TCXO). If high accuracy is not needed, a 25MHz 10ppm crystal can be used instead.
 
@@ -84,7 +86,7 @@ Crystal frequency and crystal capacitance are hardcoded in the source code. If t
 
 The software configures two clocks with frequencies between 8 kHz and 200MHz.
 
-Program source and compiled firmware are on [github](https://github.com/koendv/si5351-clock)
+Program source and compiled firmware are on [github](https://github.com/koendv/si5351-clock-generator)
 
 ## Compiled binary
 
